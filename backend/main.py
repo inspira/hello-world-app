@@ -25,7 +25,7 @@ app.add_middleware(
 @app.get("/")
 async def root():
     randnum = random.randrange(3)
-    msg = f"Hello World {randnum}"
+    msg = f"Ola planeta {randnum}"
     if randnum:
         logger.warn(f"Warn - randnum: {randnum}")
     else:
